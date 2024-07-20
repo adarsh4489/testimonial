@@ -5,14 +5,14 @@ const Card = (props) => {
 
 let review=props.review;
     return (
-      <div className=" bg-white flex flex-col text-black gap-3 md:relative ">
-        <div className="profilepic md:absolute md:top-[-4rem] md:z-[10] mx-auto">
+      <div className=" bg-white flex flex-col text-black gap-3 lg:relative ">
+        <div className="profilepic lg:absolute md:top-[-5rem] left-[-0.5rem]  mx-auto">
           <img
-            className="z-[25] aspect-square w-[140px] h-[140px] rounded-full"
+            className="aspect-square w-[140px] h-[140px] rounded-full"
             src={review.profile}
             alt="profile photo "
           />
-          <div className="rounded-full z-[-10] absolute w-[140px] h-[140px] bg-purple-600 top-[-6px] left-[4px] "></div>
+          
         </div>
         <div className="">
           <h3 className="name text-2xl font-semibold">{review.name}</h3>
